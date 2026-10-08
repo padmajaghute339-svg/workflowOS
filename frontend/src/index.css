@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0a0817;
+    color: #e2e8f0;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(255, 0, 127, 0.12) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 240, 255, 0.12) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(112, 0, 255, 0.15) 0px, transparent 50%),
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+  }
+}
+
+/* Y2K Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0817;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff007f, #00f0ff);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff2a85, #39ff14);
+}
+
+/* Y2K Card & Glow Utilities */
+.y2k-card {
+  background: rgba(19, 17, 42, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 0, 127, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.y2k-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.y2k-card-hover:hover {
+  border-color: rgba(0, 240, 255, 0.5);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.y2k-gradient-text {
+  background: linear-gradient(135deg, #ff007f 0%, #a855f7 50%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.y2k-gradient-bg {
+  background: linear-gradient(135deg, #ff007f 0%, #7000ff 50%, #00f0ff 100%);
+}
+
+.y2k-btn-primary {
+  background: linear-gradient(135deg, #ff007f 0%, #9d4edf 100%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+  transition: all 0.2s ease;
+}
+.y2k-btn-primary:hover {
+  box-shadow: 0 0 25px rgba(255, 0, 127, 0.7);
+  transform: scale(1.02);
+}
+
+.y2k-btn-cyan {
+  background: linear-gradient(135deg, #00f0ff 0%, #7000ff 100%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transition: all 0.2s ease;
+}
+.y2k-btn-cyan:hover {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+  transform: scale(1.02);
+}

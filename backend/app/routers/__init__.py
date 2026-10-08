@@ -1,0 +1,11 @@
+from app.routers.auth import router as auth_router
+from app.routers.employees import router as employees_router
+from app.routers.departments import router as departments_router
+from app.routers.projects import router as projects_router
+from app.routers.tasks import router as tasks_router
+from app.routers.attendance import router as attendance_router
+from app.routers.leaves import router as leaves_router
+from app.routers.performance import router as performance_router
+from app.routers.notifications import router as notifications_router
+from app.routers.dashboard import router as dashboard_router
+from app.routers.reports import router as reports_router
